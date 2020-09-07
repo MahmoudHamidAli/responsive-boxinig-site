@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">About</a></li>
+            <li><a href="#" onclick="toggleMenu();">Training</a></li>
+            <li><a href="#" onclick="toggleMenu();">Team</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">Your Logo</h2>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="/bg.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Stronger</h2>
+            <h3>Never give up</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam temporibus, modi porro eveniet impedit voluptates recusandae sit placeat earum, accusamus error laboriosam similique vel molestiae aut maxime. Adipisci, alias?</p>
+            <a href="#">Join us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/m7mod.7amd9897/" target="_blank"><img src="/facebook.png" alt=""></a>
+            </li>
+            <li><a href="https://www.instagram.com/mahmmoud_hamed97/" target="_blank"><img src="/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/Mahmoud9721" target="_blank"><img src="/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var banner = document.querySelector('.banner');
+        menuToggle.classList.toggle('active');
+        banner.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
